@@ -46,3 +46,7 @@ async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
 @router.callback_query(F.data == "electro")
 async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_electro, reply_markup=kb.menu_electro)
+
+@router.callback_query(F.data == "dendro")
+async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
+    await clbck.message.answer(text.menu_dendro, reply_markup=kb.menu_dendro)

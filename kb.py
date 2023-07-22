@@ -89,3 +89,17 @@ menu_electro = [
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
 menu_electro = InlineKeyboardMarkup(inline_keyboard=menu_electro)
+
+menu_dendro = [
+    [InlineKeyboardButton(text="Кирара", callback_data="kirara"),
+    InlineKeyboardButton(text="Аль-Хайтам", callback_data="alhaitham")],
+    [InlineKeyboardButton(text="Бай Чжу", callback_data="baizhu"),
+    InlineKeyboardButton(text="Коллеи", callback_data="collei")],
+    [InlineKeyboardButton(text="Кавех", callback_data="kaveh"),
+    InlineKeyboardButton(text="Путешественник/ца", callback_data="traveler_dendro")],
+    [InlineKeyboardButton(text="Нахида", callback_data="nahida"),
+    InlineKeyboardButton(text="Тигнари", callback_data="tighnari")],
+    [InlineKeyboardButton(text="Яо Яо", callback_data="yaoyao"), 
+    InlineKeyboardButton(text="Главное меню", callback_data="menu")]
+]
+menu_dendro = InlineKeyboardMarkup(inline_keyboard=menu_dendro)
