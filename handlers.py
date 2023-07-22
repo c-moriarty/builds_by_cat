@@ -23,6 +23,10 @@ async def start_handler(msg: Message):
 async def menu(msg: Message):
     await msg.answer(text.menu, reply_markup=kb.menu)
 
+@router.callback_query(F.data == "menu")
+async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
+    await clbck.message.answer(text.menu, reply_markup=kb.menu)
+
 @router.callback_query(F.data == "anemo")
 async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_anemo, reply_markup=kb.menu_anemo)
@@ -38,3 +42,7 @@ async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
 @router.callback_query(F.data == "geo")
 async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_geo, reply_markup=kb.menu_geo)
+
+@router.callback_query(F.data == "electro")
+async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
+    await clbck.message.answer(text.menu_electro, reply_markup=kb.menu_electro)

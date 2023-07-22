@@ -72,3 +72,20 @@ menu_geo = [
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
 menu_geo = InlineKeyboardMarkup(inline_keyboard=menu_geo)
+
+menu_electro = [
+    [InlineKeyboardButton(text="Бэй Доу", callback_data="beidou"),
+    InlineKeyboardButton(text="Сайно", callback_data="cyno")],
+    [InlineKeyboardButton(text="Дори", callback_data="dori"),
+    InlineKeyboardButton(text="Фишль", callback_data="fischl")],
+    [InlineKeyboardButton(text="Кэ Цин", callback_data="keqing"),
+    InlineKeyboardButton(text="Путешественник/ца", callback_data="traveler_electro")],
+    [InlineKeyboardButton(text="Кики Синобу", callback_data="kuki_shinobu"),
+    InlineKeyboardButton(text="Лиза", callback_data="lisa")],
+    [InlineKeyboardButton(text="Райдэн", callback_data="raiden"),
+    InlineKeyboardButton(text="Рэйзор", callback_data="razor")],
+    [InlineKeyboardButton(text="Сара", callback_data="sara"),
+    InlineKeyboardButton(text="Яэ Мико", callback_data="yae_miko")], 
+    [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
+]
+menu_electro = InlineKeyboardMarkup(inline_keyboard=menu_electro)
