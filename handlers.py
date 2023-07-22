@@ -40,3 +40,9 @@ async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
 @router.callback_query(F.data == "cryo")
 async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_cryo, reply_markup=kb.menu_cryo)
+    
+@router.message(F.text == "Гео")
+@router.message(F.text == "гео")
+@router.callback_query(F.data == "geo")
+async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
+    await clbck.message.answer(text.menu_geo, reply_markup=kb.menu_geo)

@@ -19,7 +19,7 @@ menu_anemo = [
     InlineKeyboardButton(text="Кадзуха", callback_data="kazuha")],
     [InlineKeyboardButton(text="Саю", callback_data="sayu"),
     InlineKeyboardButton(text="Сахароза", callback_data="sucrose")],
-    [InlineKeyboardButton(text="Путешественник", callback_data="traveler"),
+    [InlineKeyboardButton(text="Путешественник/ца", callback_data="traveler_anemo"),
     InlineKeyboardButton(text="Венти", callback_data="venti")], 
     [InlineKeyboardButton(text="Странник", callback_data="wanderer"), 
     InlineKeyboardButton(text="Сяо", callback_data="xiao")],
@@ -59,3 +59,16 @@ menu_cryo = [
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
 menu_cryo = InlineKeyboardMarkup(inline_keyboard=menu_cryo)
+
+menu_geo = [
+    [InlineKeyboardButton(text="Альбедо", callback_data="albedo"),
+    InlineKeyboardButton(text="Горо", callback_data="gorou")],
+    [InlineKeyboardButton(text="Итто", callback_data="itto"),
+    InlineKeyboardButton(text="Нин Гуан", callback_data="ningguang")],
+    [InlineKeyboardButton(text="Ноэлль", callback_data="noelle"),
+    InlineKeyboardButton(text="Путешественник/ца", callback_data="traveler_geo")],
+    [InlineKeyboardButton(text="Юнь Цзинь", callback_data="yun_jin"),
+    InlineKeyboardButton(text="Чжун Ли", callback_data="zhongli")], 
+    [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
+]
+menu_geo = InlineKeyboardMarkup(inline_keyboard=menu_geo)
