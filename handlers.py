@@ -28,3 +28,9 @@ async def menu(msg: Message):
 @router.callback_query(F.data == "anemo")
 async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_anemo, reply_markup=kb.menu_anemo)
+
+@router.message(F.text == "Пиро")
+@router.message(F.text == "пиро")
+@router.callback_query(F.data == "pyro")
+async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
+    await clbck.message.answer(text.menu_pyro, reply_markup=kb.menu_pyro)
