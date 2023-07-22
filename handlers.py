@@ -24,7 +24,7 @@ async def menu(msg: Message):
     await msg.answer(text.menu, reply_markup=kb.menu)
 
 @router.callback_query(F.data == "menu")
-async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
+async def menu(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu, reply_markup=kb.menu)
 
 @router.callback_query(F.data == "anemo")
@@ -32,11 +32,11 @@ async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_anemo, reply_markup=kb.menu_anemo)
 
 @router.callback_query(F.data == "pyro")
-async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
+async def menu_pyro(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_pyro, reply_markup=kb.menu_pyro)
 
 @router.callback_query(F.data == "cryo")
-async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
+async def menu_cryo(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_cryo, reply_markup=kb.menu_cryo)
 
 @router.callback_query(F.data == "geo")
@@ -44,13 +44,22 @@ async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_geo, reply_markup=kb.menu_geo)
 
 @router.callback_query(F.data == "electro")
-async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
+async def menu_geo(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_electro, reply_markup=kb.menu_electro)
 
 @router.callback_query(F.data == "dendro")
-async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
+async def menu_dendro(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_dendro, reply_markup=kb.menu_dendro)
 
 @router.callback_query(F.data == "hydro")
-async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
+async def menu_hydro(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_hydro, reply_markup=kb.menu_hydro)
+
+#Anemo
+@router.callback_query(F.data == "kazuha")
+async def menu_kazuha(clbck: CallbackQuery, state: FSMContext):
+    await clbck.message.answer(text.menu_kazuha, reply_markup=kb.menu_kazuha)
+
+@router.callback_query(F.data == "kazuha_ms")
+async def menu_kazuha(clbck: CallbackQuery, state: FSMContext):
+    await clbck.message.answer(text.kazuha_ms)

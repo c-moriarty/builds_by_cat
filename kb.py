@@ -117,3 +117,10 @@ menu_hydro = [
     InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
 menu_hydro = InlineKeyboardMarkup(inline_keyboard=menu_hydro)
+
+menu_kazuha = [
+    [InlineKeyboardButton(text="Мастерство стихий", callback_data="kazuha_ms"),
+    InlineKeyboardButton(text="Крит. шанс и крит. урон", callback_data="kazuha_krit")],
+    [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
+]
+menu_kazuha = InlineKeyboardMarkup(inline_keyboard=menu_kazuha)
