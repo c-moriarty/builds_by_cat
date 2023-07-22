@@ -16,3 +16,7 @@ async def start_handler(msg: Message):
 @router.message(F.text == "◀️ Выйти в меню")
 async def menu(msg: Message):
     await msg.answer(text.menu, reply_markup=kb.menu)
+
+@router.callback_query(F.data == "anemo")
+async def start_handler(msg: Message):
+    await msg.answer(text.greet.format(name=msg.from_user.full_name), reply_markup=kb.menu_anemo)
