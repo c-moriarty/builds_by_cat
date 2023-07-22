@@ -24,4 +24,4 @@ menu_anemo = [
     [InlineKeyboardButton(text="Странник", callback_data="wanderer"), 
     InlineKeyboardButton(text="Сяо", callback_data="xiao")]
 ]
-menu_anemo = InlineKeyboardMarkup(inline_keyboard=menu)
+menu_anemo = InlineKeyboardMarkup(inline_keyboard=menu_anemo)

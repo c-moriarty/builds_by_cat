@@ -2,8 +2,14 @@ from aiogram import F, Router, types
 from aiogram.filters import Command
 from aiogram.types import Message
 
+from aiogram import flags
+from aiogram.fsm.context import FSMContext
+from aiogram.types.callback_query import CallbackQuery
+from states import Gen
+
 import kb
 import text
+import states
 
 router = Router()
 
@@ -17,6 +23,8 @@ async def start_handler(msg: Message):
 async def menu(msg: Message):
     await msg.answer(text.menu, reply_markup=kb.menu)
 
+@router.message(F.text == "Анемо")
+@router.message(F.text == "анемо")
 @router.callback_query(F.data == "anemo")
-async def start_handler(msg: Message):
-    await msg.answer(text.greet.format(name=msg.from_user.full_name), reply_markup=kb.menu_anemo)
+async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
+    await clbck.message.answer(text.menu_anemo, reply_markup=kb.menu_anemo)
