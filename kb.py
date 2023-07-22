@@ -6,7 +6,7 @@ menu = [
     InlineKeyboardButton(text="Гео", callback_data="geo")],
     [InlineKeyboardButton(text="Электро", callback_data="electro"),
     InlineKeyboardButton(text="Дэндро", callback_data="dendro")],
-    [InlineKeyboardButton(text="Гидро", callback_data="gidro")]
+    [InlineKeyboardButton(text="Гидро", callback_data="hydro")]
 ]
 menu = InlineKeyboardMarkup(inline_keyboard=menu)
 exit_kb = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="◀️ Выйти в меню")]], resize_keyboard=True)
@@ -103,3 +103,17 @@ menu_dendro = [
     InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
 menu_dendro = InlineKeyboardMarkup(inline_keyboard=menu_dendro)
+
+menu_hydro = [
+    [InlineKeyboardButton(text="Аято", callback_data="ayato"),
+    InlineKeyboardButton(text="Барбара", callback_data="barbara")],
+    [InlineKeyboardButton(text="Кандакия", callback_data="candace"),
+    InlineKeyboardButton(text="Тарталья", callback_data="childe")],
+    [InlineKeyboardButton(text="Кокоми", callback_data="kokomi"),
+    InlineKeyboardButton(text="Мона", callback_data="mona")],
+    [InlineKeyboardButton(text="Нилу", callback_data="nilou"),
+    InlineKeyboardButton(text="Син Цю", callback_data="xingqiu")],
+    [InlineKeyboardButton(text="E Лань", callback_data="yelan"), 
+    InlineKeyboardButton(text="Главное меню", callback_data="menu")]
+]
+menu_hydro = InlineKeyboardMarkup(inline_keyboard=menu_hydro)
