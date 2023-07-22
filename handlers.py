@@ -23,26 +23,18 @@ async def start_handler(msg: Message):
 async def menu(msg: Message):
     await msg.answer(text.menu, reply_markup=kb.menu)
 
-@router.message(F.text == "Анемо")
-@router.message(F.text == "анемо")
 @router.callback_query(F.data == "anemo")
 async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_anemo, reply_markup=kb.menu_anemo)
 
-@router.message(F.text == "Пиро")
-@router.message(F.text == "пиро")
 @router.callback_query(F.data == "pyro")
 async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_pyro, reply_markup=kb.menu_pyro)
 
-@router.message(F.text == "Крио")
-@router.message(F.text == "крио")
 @router.callback_query(F.data == "cryo")
 async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_cryo, reply_markup=kb.menu_cryo)
-    
-@router.message(F.text == "Гео")
-@router.message(F.text == "гео")
+
 @router.callback_query(F.data == "geo")
 async def menu_anemo(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_geo, reply_markup=kb.menu_geo)
