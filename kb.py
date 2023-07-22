@@ -2,7 +2,7 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, KeyboardBu
 menu = [
     [InlineKeyboardButton(text="Анемо", callback_data="anemo"),
     InlineKeyboardButton(text="Пиро", callback_data="pyro")],
-    [InlineKeyboardButton(text="Крио", callback_data="crio"),
+    [InlineKeyboardButton(text="Крио", callback_data="cryo"),
     InlineKeyboardButton(text="Гео", callback_data="geo")],
     [InlineKeyboardButton(text="Электро", callback_data="electro"),
     InlineKeyboardButton(text="Дэндро", callback_data="dendro")],
@@ -42,3 +42,20 @@ menu_pyro = [
     InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
 menu_pyro = InlineKeyboardMarkup(inline_keyboard=menu_pyro)
+
+menu_cryo = [
+    [InlineKeyboardButton(text="Элой", callback_data="aloy"),
+    InlineKeyboardButton(text="Аяка", callback_data="ayaka")],
+    [InlineKeyboardButton(text="Чун Юнь", callback_data="chongyun"),
+    InlineKeyboardButton(text="Диона", callback_data="diona")],
+    [InlineKeyboardButton(text="Эола", callback_data="eula"),
+    InlineKeyboardButton(text="Гань Юй", callback_data="ganyu")],
+    [InlineKeyboardButton(text="Кэйя", callback_data="kaeya"),
+    InlineKeyboardButton(text="Лайла", callback_data="layla")], 
+    [InlineKeyboardButton(text="Мика", callback_data="mika"), 
+    InlineKeyboardButton(text="Ци Ци", callback_data="qiqi")],
+    [InlineKeyboardButton(text="Розария", callback_data="rosara"), 
+    InlineKeyboardButton(text="Шэнь Хэ", callback_data="shenhe")],
+    [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
+]
+menu_cryo = InlineKeyboardMarkup(inline_keyboard=menu_cryo)
