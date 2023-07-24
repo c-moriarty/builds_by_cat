@@ -20,9 +20,6 @@ kazuha_ms='''Артефакты:\n\nЦветок: HP, в доп. статах М
 восстановление энергии %, шанс крита\nКубоок: МС, в доп. статах восстановление энергии %, 
 шанс крита\nШапка: МС/Шанск крита %, в доп статах МС, шанс крита %, восстановление энергии %'''
 
-def information(argument):
-    set = sheet.cell(row=argument, column=3).value
-    flower = sheet.cell(row=argument, column=4).value
-    info = '''Сэты: {set}\n\n
-      Цветок: {flower}\n\n
-      Перо:'''
+info = '''Сэты: {set}\n\n
+Цветок: {flower}\n
+Перо: bla bla\n'''

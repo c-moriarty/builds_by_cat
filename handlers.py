@@ -69,4 +69,5 @@ async def menu_kazuha(clbck: CallbackQuery, state: FSMContext):
 
 @router.callback_query(F.data == "kazuha_krit")
 async def menu_kazuha(clbck: CallbackQuery, state: FSMContext):
-    await clbck.message.answer(text.information(argument=3))
+    argument = 3
+    await clbck.message.answer(text.info.format(set = sheet.cell(row=argument, column=3).value, flower = sheet.cell(row=argument, column=4).value))
