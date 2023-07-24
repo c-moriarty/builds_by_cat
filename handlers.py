@@ -7,7 +7,6 @@ from aiogram.fsm.context import FSMContext
 from aiogram.types.callback_query import CallbackQuery
 from states import Gen
 
-import main
 import kb
 import text
 import states
@@ -18,9 +17,6 @@ router = Router()
 db = load_workbook('./gen.xlsx')
 sheet = db.get_sheet_by_name('Sheet1')
 
-@router.message_handler(content_types=['clear'])
-def chatting(message):
-    router.send_message(message.chat.id, message.id)
 
 @router.message(Command("start"))
 async def start_handler(msg: Message):
@@ -63,6 +59,9 @@ async def menu_dendro(clbck: CallbackQuery, state: FSMContext):
 async def menu_hydro(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_hydro, reply_markup=kb.menu_hydro)
 
+@router.callback_query(F.data == "back")
+async def back(clbck: CallbackQuery, state: FSMContext):
+    await clbck.message.answer(text.menu, reply_markup=kb.menu)
 #Anemo
 @router.callback_query(F.data == "kazuha")
 async def menu_kazuha(clbck: CallbackQuery, state: FSMContext):
@@ -78,7 +77,7 @@ async def menu_kazuha(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.info.format(builld = sheet.cell(row=argument, column=2).value, set = sheet.cell(row=argument, column=3).value, flower = sheet.cell(row=argument, column=4).value, feather = sheet.cell(row=argument, column=5).value, watches = sheet.cell(row=argument, column=6).value, cup = sheet.cell(row=argument, column=7).value, crown = sheet.cell(row=argument, column=8).value, weapon= sheet.cell(row=argument, column=9).value, maybe= sheet.cell(row=argument, column=10).value), reply_markup=kb.back)
 
 @router.callback_query(F.data == "faruzan")
-async def menu_kazuha(clbck: CallbackQuery, state: FSMContext):
+async def menu_faruzan(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.menu_faruzan, reply_markup=kb.menu_faruzan)
 
 @router.callback_query(F.data == "faruzan_sup")
@@ -89,7 +88,3 @@ async def menu_faruzan(clbck: CallbackQuery, state: FSMContext):
 async def menu_faruzan(clbck: CallbackQuery, state: FSMContext):
     argument = 5
     await clbck.message.answer(text.info.format(builld = sheet.cell(row=argument, column=2).value, set = sheet.cell(row=argument, column=3).value, flower = sheet.cell(row=argument, column=4).value, feather = sheet.cell(row=argument, column=5).value, watches = sheet.cell(row=argument, column=6).value, cup = sheet.cell(row=argument, column=7).value, crown = sheet.cell(row=argument, column=8).value, weapon= sheet.cell(row=argument, column=9).value, maybe= sheet.cell(row=argument, column=10).value), reply_markup=kb.back)
-
-@router.callback_query(F.data == "back")
-async def back(clbck: CallbackQuery, state: FSMContext):
-    await clbck.message.answer(text.menu, reply_markup=kb.menu)
