@@ -12,6 +12,11 @@ menu = InlineKeyboardMarkup(inline_keyboard=menu)
 exit_kb = ReplyKeyboardMarkup(keyboard=[[KeyboardButton(text="◀️ Выйти в меню")]], resize_keyboard=True)
 iexit_kb = InlineKeyboardMarkup(inline_keyboard=[[InlineKeyboardButton(text="◀️ Выйти в меню", callback_data="menu")]])
 
+back = [
+    [InlineKeyboardButton(text="Вернуться в главное меню", callback_data="menu")]
+]
+back = InlineKeyboardMarkup(inline_keyboard=back)
+
 menu_anemo = [
     [InlineKeyboardButton(text="Фарузан", callback_data="faruzan"),
     InlineKeyboardButton(text="Хэйдзо", callback_data="heizou")],
@@ -124,3 +129,10 @@ menu_kazuha = [
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
 menu_kazuha = InlineKeyboardMarkup(inline_keyboard=menu_kazuha)
+
+menu_faruzan = [
+    [InlineKeyboardButton(text="Саппорт", callback_data="faruzan_sup"),
+    InlineKeyboardButton(text="ДД", callback_data="faruzan_dd")],
+    [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
+]
+menu_faruzan = InlineKeyboardMarkup(inline_keyboard=menu_faruzan)
