@@ -11,7 +11,11 @@ import kb
 import text
 import states
 
+from openpyxl import load_workbook
+
 router = Router()
+db = load_workbook('./gen.xlsx')
+sheet = db.get_sheet_by_name('Sheet1')
 
 @router.message(Command("start"))
 async def start_handler(msg: Message):
@@ -19,7 +23,6 @@ async def start_handler(msg: Message):
 
 @router.message(F.text == "Меню")
 @router.message(F.text == "Выйти в меню")
-@router.message(F.text == "◀️ Выйти в меню")
 async def menu(msg: Message):
     await msg.answer(text.menu, reply_markup=kb.menu)
 
@@ -63,3 +66,7 @@ async def menu_kazuha(clbck: CallbackQuery, state: FSMContext):
 @router.callback_query(F.data == "kazuha_ms")
 async def menu_kazuha(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.kazuha_ms)
+
+@router.callback_query(F.data == "kazuha_krit")
+async def menu_kazuha(clbck: CallbackQuery, state: FSMContext):
+    await clbck.message.answer(text.information(argument=3))
