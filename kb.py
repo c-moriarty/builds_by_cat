@@ -143,3 +143,10 @@ menu_venti = [
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
 menu_venti = InlineKeyboardMarkup(inline_keyboard=menu_venti)
+
+menu_wanderer = [
+    [InlineKeyboardButton(text="Драйвер", callback_data="wanderer_driver"),
+    InlineKeyboardButton(text="Анемо DPS", callback_data="wanderer_dps")],
+    [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
+]
+menu_wanderer = InlineKeyboardMarkup(inline_keyboard=menu_wanderer)

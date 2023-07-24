@@ -106,3 +106,17 @@ async def menu_venti(clbck: CallbackQuery, state: FSMContext):
 async def menu_venti(clbck: CallbackQuery, state: FSMContext):
     argument = 8
     await clbck.message.answer(text.info.format(builld = sheet.cell(row=argument, column=2).value, set = sheet.cell(row=argument, column=3).value, flower = sheet.cell(row=argument, column=4).value, feather = sheet.cell(row=argument, column=5).value, watches = sheet.cell(row=argument, column=6).value, cup = sheet.cell(row=argument, column=7).value, crown = sheet.cell(row=argument, column=8).value, weapon= sheet.cell(row=argument, column=9).value, maybe= sheet.cell(row=argument, column=10).value), reply_markup=kb.back)
+
+@router.callback_query(F.data == "wanderer")
+async def menu_wanderer(clbck: CallbackQuery, state: FSMContext):
+    await clbck.message.answer(text.menu_wanderer, reply_markup=kb.menu_wanderer)
+
+@router.callback_query(F.data == "wanderer_driver")
+async def menu_wanderer(clbck: CallbackQuery, state: FSMContext):
+    argument = 9
+    await clbck.message.answer(text.info.format(builld = sheet.cell(row=argument, column=2).value, set = sheet.cell(row=argument, column=3).value, flower = sheet.cell(row=argument, column=4).value, feather = sheet.cell(row=argument, column=5).value, watches = sheet.cell(row=argument, column=6).value, cup = sheet.cell(row=argument, column=7).value, crown = sheet.cell(row=argument, column=8).value, weapon= sheet.cell(row=argument, column=9).value, maybe= sheet.cell(row=argument, column=10).value), reply_markup=kb.back)
+
+@router.callback_query(F.data == "wanderer_dps")
+async def menu_wanderer(clbck: CallbackQuery, state: FSMContext):
+    argument = 10
+    await clbck.message.answer(text.info.format(builld = sheet.cell(row=argument, column=2).value, set = sheet.cell(row=argument, column=3).value, flower = sheet.cell(row=argument, column=4).value, feather = sheet.cell(row=argument, column=5).value, watches = sheet.cell(row=argument, column=6).value, cup = sheet.cell(row=argument, column=7).value, crown = sheet.cell(row=argument, column=8).value, weapon= sheet.cell(row=argument, column=9).value, maybe= sheet.cell(row=argument, column=10).value), reply_markup=kb.back)
