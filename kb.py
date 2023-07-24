@@ -136,3 +136,10 @@ menu_faruzan = [
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
 menu_faruzan = InlineKeyboardMarkup(inline_keyboard=menu_faruzan)
+
+menu_venti = [
+    [InlineKeyboardButton(text="Мастерство стихий", callback_data="venti_ms"),
+    InlineKeyboardButton(text="Крит. шанс и крит. урон", callback_data="venti_krit")],
+    [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
+]
+menu_venti = InlineKeyboardMarkup(inline_keyboard=menu_venti)

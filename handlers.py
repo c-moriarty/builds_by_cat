@@ -88,3 +88,21 @@ async def menu_faruzan(clbck: CallbackQuery, state: FSMContext):
 async def menu_faruzan(clbck: CallbackQuery, state: FSMContext):
     argument = 5
     await clbck.message.answer(text.info.format(builld = sheet.cell(row=argument, column=2).value, set = sheet.cell(row=argument, column=3).value, flower = sheet.cell(row=argument, column=4).value, feather = sheet.cell(row=argument, column=5).value, watches = sheet.cell(row=argument, column=6).value, cup = sheet.cell(row=argument, column=7).value, crown = sheet.cell(row=argument, column=8).value, weapon= sheet.cell(row=argument, column=9).value, maybe= sheet.cell(row=argument, column=10).value), reply_markup=kb.back)
+
+@router.callback_query(F.data == "heizou")
+async def menu_heizou(clbck: CallbackQuery, state: FSMContext):
+    argument = 6
+    await clbck.message.answer(text.info.format(builld = sheet.cell(row=argument, column=2).value, set = sheet.cell(row=argument, column=3).value, flower = sheet.cell(row=argument, column=4).value, feather = sheet.cell(row=argument, column=5).value, watches = sheet.cell(row=argument, column=6).value, cup = sheet.cell(row=argument, column=7).value, crown = sheet.cell(row=argument, column=8).value, weapon= sheet.cell(row=argument, column=9).value, maybe= sheet.cell(row=argument, column=10).value), reply_markup=kb.back)
+
+@router.callback_query(F.data == "venti")
+async def menu_venti(clbck: CallbackQuery, state: FSMContext):
+    await clbck.message.answer(text.menu_venti, reply_markup=kb.menu_venti)
+
+@router.callback_query(F.data == "venti_ms")
+async def menu_venti(clbck: CallbackQuery, state: FSMContext):
+    argument = 7
+    await clbck.message.answer(text.info.format(builld = sheet.cell(row=argument, column=2).value, set = sheet.cell(row=argument, column=3).value, flower = sheet.cell(row=argument, column=4).value, feather = sheet.cell(row=argument, column=5).value, watches = sheet.cell(row=argument, column=6).value, cup = sheet.cell(row=argument, column=7).value, crown = sheet.cell(row=argument, column=8).value, weapon= sheet.cell(row=argument, column=9).value, maybe= sheet.cell(row=argument, column=10).value), reply_markup=kb.back)
+@router.callback_query(F.data == "venti_krit")
+async def menu_venti(clbck: CallbackQuery, state: FSMContext):
+    argument = 8
+    await clbck.message.answer(text.info.format(builld = sheet.cell(row=argument, column=2).value, set = sheet.cell(row=argument, column=3).value, flower = sheet.cell(row=argument, column=4).value, feather = sheet.cell(row=argument, column=5).value, watches = sheet.cell(row=argument, column=6).value, cup = sheet.cell(row=argument, column=7).value, crown = sheet.cell(row=argument, column=8).value, weapon= sheet.cell(row=argument, column=9).value, maybe= sheet.cell(row=argument, column=10).value), reply_markup=kb.back)
