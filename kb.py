@@ -157,3 +157,10 @@ menu_jean = [
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
 menu_jean = InlineKeyboardMarkup(inline_keyboard=menu_jean)
+
+menu_thoma = [
+    [InlineKeyboardButton(text="Саб-дд", callback_data="thoma_supdd"),
+    InlineKeyboardButton(text="Щитовик", callback_data="thoma_shit")],
+    [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
+]
+menu_thoma = InlineKeyboardMarkup(inline_keyboard=menu_jean)
