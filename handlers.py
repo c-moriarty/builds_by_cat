@@ -197,7 +197,7 @@ async def menu_xinyan(clbck: CallbackQuery, state: FSMContext):
 
 @router.callback_query(F.data == "thoma")
 async def menu_thoma(clbck: CallbackQuery, state: FSMContext):
-    await clbck.message.answer(text.menu_jean, reply_markup=kb.menu_jean)
+    await clbck.message.answer(text.menu_thoma, reply_markup=kb.menu_thoma)
 
 @router.callback_query(F.data == "thoma_supdd")
 async def menu_thoma_supdd(clbck: CallbackQuery, state: FSMContext):
@@ -251,7 +251,7 @@ async def menu_yanfei(clbck: CallbackQuery, state: FSMContext):
 
 @router.callback_query(F.data == "layla")
 async def menu_layla(clbck: CallbackQuery, state: FSMContext):
-    await clbck.message.answer(text.menu_jean, reply_markup=kb.menu_jean)
+    await clbck.message.answer(text.menu_layla, reply_markup=kb.menu_layla)
 
 @router.callback_query(F.data == "layla_supdd")
 async def menu_layla_supdd(clbck: CallbackQuery, state: FSMContext):
@@ -264,16 +264,16 @@ async def menu_layla_support(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.info.format(builld = sheet.cell(row=argument, column=2).value, set = sheet.cell(row=argument, column=3).value, flower = sheet.cell(row=argument, column=4).value, feather = sheet.cell(row=argument, column=5).value, watches = sheet.cell(row=argument, column=6).value, cup = sheet.cell(row=argument, column=7).value, crown = sheet.cell(row=argument, column=8).value, weapon= sheet.cell(row=argument, column=9).value, maybe= sheet.cell(row=argument, column=10).value), reply_markup=kb.back)
 
 @router.callback_query(F.data == "mika")
-async def menu_layla(clbck: CallbackQuery, state: FSMContext):
-    await clbck.message.answer(text.menu_jean, reply_markup=kb.menu_jean)
+async def menu_mika(clbck: CallbackQuery, state: FSMContext):
+    await clbck.message.answer(text.menu_mika, reply_markup=kb.menu_mika)
 
 @router.callback_query(F.data == "mika_dd")
-async def menu_layla_supdd(clbck: CallbackQuery, state: FSMContext):
+async def menu_mika_dd(clbck: CallbackQuery, state: FSMContext):
     argument = 72
     await clbck.message.answer(text.info.format(builld = sheet.cell(row=argument, column=2).value, set = sheet.cell(row=argument, column=3).value, flower = sheet.cell(row=argument, column=4).value, feather = sheet.cell(row=argument, column=5).value, watches = sheet.cell(row=argument, column=6).value, cup = sheet.cell(row=argument, column=7).value, crown = sheet.cell(row=argument, column=8).value, weapon= sheet.cell(row=argument, column=9).value, maybe= sheet.cell(row=argument, column=10).value), reply_markup=kb.back)
 
 @router.callback_query(F.data == "mika_support")
-async def menu_layla_support(clbck: CallbackQuery, state: FSMContext):
+async def menu_mika_support(clbck: CallbackQuery, state: FSMContext):
     argument = 71
     await clbck.message.answer(text.info.format(builld = sheet.cell(row=argument, column=2).value, set = sheet.cell(row=argument, column=3).value, flower = sheet.cell(row=argument, column=4).value, feather = sheet.cell(row=argument, column=5).value, watches = sheet.cell(row=argument, column=6).value, cup = sheet.cell(row=argument, column=7).value, crown = sheet.cell(row=argument, column=8).value, weapon= sheet.cell(row=argument, column=9).value, maybe= sheet.cell(row=argument, column=10).value), reply_markup=kb.back)
 
@@ -324,7 +324,7 @@ async def menu_traveler_geo(clbck: CallbackQuery, state: FSMContext):
 
 @router.callback_query(F.data == "ningguang")
 async def menu_ningguang(clbck: CallbackQuery, state: FSMContext):
-    await clbck.message.answer(text.menu_jean, reply_markup=kb.menu_jean)
+    await clbck.message.answer(text.menu_ningguang, reply_markup=kb.menu_ningguang)
 
 @router.callback_query(F.data == "ningguang_dd")
 async def menu_ningguang_dd(clbck: CallbackQuery, state: FSMContext):
@@ -338,7 +338,7 @@ async def menu_ningguang_supdd(clbck: CallbackQuery, state: FSMContext):
 
 @router.callback_query(F.data == "zhongli")
 async def menu_zhongli(clbck: CallbackQuery, state: FSMContext):
-    await clbck.message.answer(text.menu_jean, reply_markup=kb.menu_jean)
+    await clbck.message.answer(text.menu_zhongli, reply_markup=kb.menu_zhongli)
 
 @router.callback_query(F.data == "zhongli_supdd")
 async def menu_zhongli_supdd(clbck: CallbackQuery, state: FSMContext):
@@ -407,7 +407,7 @@ async def menu_razor(clbck: CallbackQuery, state: FSMContext):
 
 @router.callback_query(F.data == "sara")
 async def menu_sara(clbck: CallbackQuery, state: FSMContext):
-    await clbck.message.answer(text.menu_jean, reply_markup=kb.menu_jean)
+    await clbck.message.answer(text.menu_sara, reply_markup=kb.menu_sara)
 
 @router.callback_query(F.data == "sara_supdd")
 async def menu_sara_supdd(clbck: CallbackQuery, state: FSMContext):
@@ -420,7 +420,7 @@ async def menu_sara_support(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.info.format(builld = sheet.cell(row=argument, column=2).value, set = sheet.cell(row=argument, column=3).value, flower = sheet.cell(row=argument, column=4).value, feather = sheet.cell(row=argument, column=5).value, watches = sheet.cell(row=argument, column=6).value, cup = sheet.cell(row=argument, column=7).value, crown = sheet.cell(row=argument, column=8).value, weapon= sheet.cell(row=argument, column=9).value, maybe= sheet.cell(row=argument, column=10).value), reply_markup=kb.back)
 
 @router.callback_query(F.data == "yae_miko")
-async def menu_ryae_miko(clbck: CallbackQuery, state: FSMContext):
+async def menu_yae_miko(clbck: CallbackQuery, state: FSMContext):
     argument = 61
     await clbck.message.answer(text.info.format(builld = sheet.cell(row=argument, column=2).value, set = sheet.cell(row=argument, column=3).value, flower = sheet.cell(row=argument, column=4).value, feather = sheet.cell(row=argument, column=5).value, watches = sheet.cell(row=argument, column=6).value, cup = sheet.cell(row=argument, column=7).value, crown = sheet.cell(row=argument, column=8).value, weapon= sheet.cell(row=argument, column=9).value, maybe= sheet.cell(row=argument, column=10).value), reply_markup=kb.back)
 
@@ -451,7 +451,7 @@ async def menu_tighnari(clbck: CallbackQuery, state: FSMContext):
 
 @router.callback_query(F.data == "baizhu")
 async def menu_baizhu(clbck: CallbackQuery, state: FSMContext):
-    await clbck.message.answer(text.menu_jean, reply_markup=kb.menu_jean)
+    await clbck.message.answer(text.menu_baizhu, reply_markup=kb.menu_baizhu)
 
 @router.callback_query(F.data == "baizhu_supdd")
 async def menu_baizhu_supdd(clbck: CallbackQuery, state: FSMContext):
@@ -465,7 +465,7 @@ async def menu_baizhu_shit(clbck: CallbackQuery, state: FSMContext):
 
 @router.callback_query(F.data == "traveler_dendro")
 async def menu_traveler_dendro(clbck: CallbackQuery, state: FSMContext):
-    await clbck.message.answer(text.menu_jean, reply_markup=kb.menu_jean)
+    await clbck.message.answer(text.menu_traveler_dendro, reply_markup=kb.menu_traveler_dendro)
 
 @router.callback_query(F.data == "traveler_dendro_supdd")
 async def menu_traveler_dendro_supdd(clbck: CallbackQuery, state: FSMContext):
@@ -479,7 +479,7 @@ async def menu_traveler_dendro_support(clbck: CallbackQuery, state: FSMContext):
 
 @router.callback_query(F.data == "nahida")
 async def menu_nahida(clbck: CallbackQuery, state: FSMContext):
-    await clbck.message.answer(text.menu_jean, reply_markup=kb.menu_jean)
+    await clbck.message.answer(text.menu_nahida, reply_markup=kb.menu_nahida)
 
 @router.callback_query(F.data == "nahida_support")
 async def menu_nahida_support(clbck: CallbackQuery, state: FSMContext):
@@ -492,8 +492,8 @@ async def menu_nahida_dps(clbck: CallbackQuery, state: FSMContext):
     await clbck.message.answer(text.info.format(builld = sheet.cell(row=argument, column=2).value, set = sheet.cell(row=argument, column=3).value, flower = sheet.cell(row=argument, column=4).value, feather = sheet.cell(row=argument, column=5).value, watches = sheet.cell(row=argument, column=6).value, cup = sheet.cell(row=argument, column=7).value, crown = sheet.cell(row=argument, column=8).value, weapon= sheet.cell(row=argument, column=9).value, maybe= sheet.cell(row=argument, column=10).value), reply_markup=kb.back)
 
 @router.callback_query(F.data == "yaoyao")
-async def menu_nahida(clbck: CallbackQuery, state: FSMContext):
-    await clbck.message.answer(text.menu_jean, reply_markup=kb.menu_jean)
+async def menu_yaoyao(clbck: CallbackQuery, state: FSMContext):
+    await clbck.message.answer(text.menu_yaoyao, reply_markup=kb.menu_yaoyao)
 
 @router.callback_query(F.data == "yaoyao_react")
 async def menu_yaoyao_react(clbck: CallbackQuery, state: FSMContext):
@@ -547,7 +547,7 @@ async def menu_yelan(clbck: CallbackQuery, state: FSMContext):
 
 @router.callback_query(F.data == "candace")
 async def menu_candace(clbck: CallbackQuery, state: FSMContext):
-    await clbck.message.answer(text.menu_jean, reply_markup=kb.menu_jean)
+    await clbck.message.answer(text.menu_candace, reply_markup=kb.menu_candace)
 
 @router.callback_query(F.data == "candace_dd")
 async def menu_candace_dd(clbck: CallbackQuery, state: FSMContext):

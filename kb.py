@@ -163,74 +163,74 @@ menu_thoma = [
     InlineKeyboardButton(text="Щитовик", callback_data="thoma_shit")],
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
-menu_thoma = InlineKeyboardMarkup(inline_keyboard=menu_jean)
+menu_thoma = InlineKeyboardMarkup(inline_keyboard=menu_thoma)
 
 menu_layla = [
     [InlineKeyboardButton(text="Саб-дд", callback_data="layla_supdd"),
     InlineKeyboardButton(text="Саппорт", callback_data="layla_support")],
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
-menu_layla = InlineKeyboardMarkup(inline_keyboard=menu_jean)
+menu_layla = InlineKeyboardMarkup(inline_keyboard=menu_layla)
 
 menu_mika = [
     [InlineKeyboardButton(text="Саб-дд", callback_data="mika_dd"),
     InlineKeyboardButton(text="Саппорт", callback_data="mika_support")],
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
-menu_mika = InlineKeyboardMarkup(inline_keyboard=menu_jean)
+menu_mika = InlineKeyboardMarkup(inline_keyboard=menu_mika)
 
 menu_ningguang = [
     [InlineKeyboardButton(text="Саб-дд", callback_data="ningguang_dd"),
     InlineKeyboardButton(text="Саппорт", callback_data="ningguang_supdd")],
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
-menu_ningguang = InlineKeyboardMarkup(inline_keyboard=menu_jean)
+menu_ningguang = InlineKeyboardMarkup(inline_keyboard=menu_ningguang)
 
 menu_zhongli = [
     [InlineKeyboardButton(text="Саб-дд", callback_data="zhongli_supdd"),
     InlineKeyboardButton(text="Саппорт", callback_data="zhongli_support")],
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
-menu_zhongli = InlineKeyboardMarkup(inline_keyboard=menu_jean)
+menu_zhongli = InlineKeyboardMarkup(inline_keyboard=menu_zhongli)
 
 menu_sara = [
     [InlineKeyboardButton(text="Второстепенный дд", callback_data="sara_supdd"),
     InlineKeyboardButton(text="Саппорт", callback_data="sara_support")],
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
-menu_sara = InlineKeyboardMarkup(inline_keyboard=menu_jean)
+menu_sara = InlineKeyboardMarkup(inline_keyboard=menu_sara)
 
 menu_baizhu = [
     [InlineKeyboardButton(text="Саб-дд", callback_data="baizhu_supdd"),
     InlineKeyboardButton(text="Щитовик", callback_data="baizhu_shit")],
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
-menu_baizhu = InlineKeyboardMarkup(inline_keyboard=menu_jean)
+menu_baizhu = InlineKeyboardMarkup(inline_keyboard=menu_baizhu)
 
 menu_traveler_dendro = [
     [InlineKeyboardButton(text="Саб-дд", callback_data="traveler_dendro_supdd"),
     InlineKeyboardButton(text="Саппорт", callback_data="traveler_dendro_support")],
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
-menu_traveler_dendro = InlineKeyboardMarkup(inline_keyboard=menu_jean)
+menu_traveler_dendro = InlineKeyboardMarkup(inline_keyboard=menu_traveler_dendro)
 
 menu_nahida = [
     [InlineKeyboardButton(text="Основной DPS", callback_data="nahida_dps"),
     InlineKeyboardButton(text="Саппорт", callback_data="nahida_support")],
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
-menu_nahida = InlineKeyboardMarkup(inline_keyboard=menu_jean)
+menu_nahida = InlineKeyboardMarkup(inline_keyboard=menu_nahida)
 
 menu_yaoyao = [
     [InlineKeyboardButton(text="Реактор", callback_data="yaoyao_react"),
     InlineKeyboardButton(text="Саппорт-хиллер", callback_data="yaoyao_support")],
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
-menu_yaoyao = InlineKeyboardMarkup(inline_keyboard=menu_jean)
+menu_yaoyao = InlineKeyboardMarkup(inline_keyboard=menu_yaoyao)
 
 menu_candace = [
     [InlineKeyboardButton(text="Мэйн-дд", callback_data="candace_dd"),
     InlineKeyboardButton(text="Саппорт", callback_data="candace_support")],
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
-menu_candace = InlineKeyboardMarkup(inline_keyboard=menu_jean)
+menu_candace = InlineKeyboardMarkup(inline_keyboard=menu_candace)
