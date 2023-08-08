@@ -150,3 +150,10 @@ menu_wanderer = [
     [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
 ]
 menu_wanderer = InlineKeyboardMarkup(inline_keyboard=menu_wanderer)
+
+menu_jean = [
+    [InlineKeyboardButton(text="ДД", callback_data="jean_dd"),
+    InlineKeyboardButton(text="Саппорт", callback_data="jean_sup")],
+    [InlineKeyboardButton(text="Главное меню", callback_data="menu")]
+]
+menu_jean = InlineKeyboardMarkup(inline_keyboard=menu_jean)
